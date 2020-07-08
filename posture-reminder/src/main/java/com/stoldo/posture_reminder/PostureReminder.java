@@ -14,8 +14,10 @@ public class PostureReminder {
 		int interval = DEFAULT_INTERVAL_IN_MINS;
 		
 		if (args.length > 0) {
-			interval = Integer.parseInt(args[0]); 	
+			interval = Integer.parseInt(args[0]);	
 		}
+		
+		System.out.println("Using interval of " + interval + " minutes.");
 		
 		Timer timer = new Timer();
 		TimerTask t = new TimerTask() {
